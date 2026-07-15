@@ -56,15 +56,15 @@ Use docker-compose down -v to remove all data as well.
 🐳 Docker Hub
 Pre‑built images are available on Docker Hub:
 
-Backend: yourusername/finverse-backend:latest
+Backend: samiya6004/finverse-backend:latest
 
-Frontend: yourusername/finverse-frontend:latest
+Frontend: samiya6004/finverse-frontend:latest
 
 Pull and run them directly:
 
 bash
-docker pull yourusername/finverse-backend:latest
-docker pull yourusername/finverse-frontend:latest
+docker pull samiya6004/finverse-backend:latest
+docker pull samiya6004/finverse-frontend:latest
 Then use the provided docker-compose.yml (with image: instead of build:) to start the app without building from source.
 
 🔧 Environment Variables
