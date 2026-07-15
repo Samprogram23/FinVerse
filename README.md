@@ -36,7 +36,7 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/FinVerse.git
+   git clone https://github.com/Samprogram23/FinVerse.git
    cd FinVerse
 Start the application
 
