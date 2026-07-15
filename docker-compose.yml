@@ -1,0 +1,33 @@
+
+services:
+  backend:
+    build: ./backend
+    container_name: finverse-api
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+      - PORT=${PORT}
+      - DB_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - backend_data:/app/data
+    networks:
+      - finverse-network
+
+  frontend:
+    build: ./frontend
+    container_name: finverse-ui
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - finverse-network
+
+volumes:
+  backend_data:
+
+networks:
+  finverse-network:
+    driver: bridge
